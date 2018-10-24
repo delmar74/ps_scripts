@@ -57,7 +57,7 @@ function SendMail($mail,$psw,$smtpName,$To,$Subject,$Body, $file)
 
     $msg.Subject = $Subject 
     $msg.Body = $Body
-    $smtp.Credentials = New-Object System.Net.NetworkCredential("devops.notification.msk", $psw)
+    $smtp.Credentials = New-Object System.Net.NetworkCredential("admin", $psw)
 
     $smtp.Send($msg)
 }
